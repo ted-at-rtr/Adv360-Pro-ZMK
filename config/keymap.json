@@ -33,6 +33,12 @@
         "&none",        "&none",        "&none",        "&none",        "&none",        "&none",                 "&none",  "&none",  "&none",                     "&bt BT_CLR",      "&none", "&rgb_ug RGB_MEFS_CMD 5",  "&none",      "&none",      "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",        "&none",   "&macro_ver",        "&none",                                     "&none",                          "&none",                                          "&none",      "&none",      "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",        "&none",        "&none",                                 "&none",  "&none",  "&none",                          "&none", "&bl BL_TOG",        "&rgb_ug RGB_TOG",           "&bl BL_INC", "&bl BL_DEC",  "&none",  "&none",  "&none"
+    ], [
+        "&kp X", "&bt BT_SEL 0", "&bt BT_SEL 1", "&bt BT_SEL 2", "&bt BT_SEL 3", "&bt BT_SEL 4",                 "&kp X",                                                                                     "&trans",  "&kp X",      "&kp X",      "&kp X",  "&kp X",  "&kp X",  "&kp X",
+        "&kp X",        "&kp X",        "&kp X",        "&kp X",        "&kp X",        "&kp X",           "&bootloader",                                                                                "&bootloader",  "&kp X",      "&kp X",      "&kp X",  "&kp X",  "&kp X",  "&kp X",
+        "&kp X",        "&kp X",        "&kp X",        "&kp X",        "&kp X",        "&kp X",                 "&kp X",  "&kp X",  "&kp X",                     "&bt BT_CLR",      "&kp X", "&rgb_ug RGB_MEFS_CMD 5",  "&kp X",      "&kp X",      "&kp X",  "&kp X",  "&kp X",  "&kp X",
+        "&kp X",        "&kp X",        "&kp X",        "&kp X",   "&macro_ver",        "&kp X",                                     "&kp X",                          "&kp X",                                          "&kp X",      "&kp X",      "&kp X",  "&kp X",  "&kp X",  "&kp X",
+        "&kp X",        "&kp X",        "&kp X",        "&kp X",        "&kp X",                                 "&kp X",  "&kp X",  "&kp X",                          "&kp X", "&bl BL_TOG",        "&rgb_ug RGB_TOG",           "&bl BL_INC", "&bl BL_DEC",  "&kp X",  "&kp X",  "&kp X"
     ]
   ]
 }
