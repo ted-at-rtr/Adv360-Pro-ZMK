@@ -28,6 +28,28 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+
+    layer_parade: layer_parade {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <4>;
+        tapping-term-ms = <200>;
+        bindings = <&to>, <&to>, <&to>, <&to>;
+    };
+
+    double_tap: double_tap {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <1>;
+        tapping-term-ms = <200>;
+        bindings = <&none>, <&kp>;
+    };
+
+    triple_tap: triple {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <1>;
+        tapping-term-ms = <200>;
+        bindings = <&none>, <&none>, <&kp>;
+    };
+
   };
 
     keymap {
