@@ -39,23 +39,23 @@
 
     layer_parade: layer_parade {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <4>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&to>, <&to>, <&to>, <&to>;
+        bindings = <&to 0>, <&to 1>, <&to 4>, <&to 5>;
     };
 
-    double_tap: double_tap {
+    double_enter: double_enter {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <1>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&none>, <&kp>;
+        bindings = <&none>, <&kp ENTER>;
     };
 
-    triple_tap: triple {
+    triple_enter: triple_enter {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <1>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&none>, <&none>, <&kp>;
+        bindings = <&none>, <&none>, <&kp ENTER>;
     };
 
   };
