@@ -35,7 +35,7 @@
     long_press: long_press {
         compatible = "zmk,behavior-hold-tap";
         label = "LONG_PRESS";
-        #binding-cells = <2>;
+        #binding-cells = <1>;
         tapping-term-ms = <200>;
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
