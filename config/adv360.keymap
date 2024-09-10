@@ -24,27 +24,24 @@
 
     ht_tp: hold_tap__tap_preferred {
         compatible = "zmk,behavior-hold-tap";
-        label = "HT_TP";
         #binding-cells = <2>;
         tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
+        quick-tap-ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
 
     long_press: long_press {
         compatible = "zmk,behavior-hold-tap";
-        label = "LONG_PRESS";
-        #binding-cells = <1>;
+        #binding-cells = <2>;
         tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
+        quick-tap-ms = <175>;
         flavor = "tap-preferred";
         bindings = <&none>, <&kp>;
     };
 
     layer_parade: layer_parade {
         compatible = "zmk,behavior-tap-dance";
-        label = "LONG_PARADE";
         #binding-cells = <4>;
         tapping-term-ms = <200>;
         bindings = <&to>, <&to>, <&to>, <&to>;
@@ -52,7 +49,6 @@
 
     double_tap: double_tap {
         compatible = "zmk,behavior-tap-dance";
-        label = "DOUBLE_TAP";
         #binding-cells = <1>;
         tapping-term-ms = <200>;
         bindings = <&none>, <&kp>;
@@ -60,7 +56,6 @@
 
     triple_tap: triple {
         compatible = "zmk,behavior-tap-dance";
-        label = "TRIPLE_TAP";
         #binding-cells = <1>;
         tapping-term-ms = <200>;
         bindings = <&none>, <&none>, <&kp>;
