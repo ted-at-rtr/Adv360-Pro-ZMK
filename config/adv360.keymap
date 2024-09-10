@@ -42,23 +42,23 @@
 
     layer_parade: layer_parade {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <4>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&to>, <&to>, <&to>, <&to>;
+        bindings = <&to 0>, <&to 1>, <&to 4>, <&to 5>;
     };
 
-    double_tap: double_tap {
+    double_enter: double_enter {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <1>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&none>, <&kp>;
+        bindings = <&none>, <&kp ENTER>;
     };
 
-    triple_tap: triple {
+    triple_enter: triple_enter {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <1>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&none>, <&none>, <&kp>;
+        bindings = <&none>, <&none>, <&kp ENTER>;
     };
 
   };
@@ -69,21 +69,21 @@
 
         default_layer {
             bindings = <
-               &kp GRAVE        &kp N1                  &kp N2    &kp N3     &kp N4  &kp N5            &layer_parade 0 1 4 5                                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9                            &kp N0  &kp MINUS
-                 &kp TAB         &kp Q                   &kp W     &kp E      &kp R   &kp T                            &none                                                                             &kp EQUAL   &kp Y   &kp U      &kp I     &kp O                             &kp P   &kp BSLH
-                   &mo 2         &kp A                   &kp S     &kp D      &kp F   &kp G                 &kp LEFT_BRACKET  &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_BRACKET   &kp H   &kp J      &kp K     &kp L                          &kp SEMI    &kp SQT
-               &kp LSHFT         &kp Z                   &kp X     &kp C      &kp V   &kp B                                                  &kp HOME                      &kp PG_UP                                 &kp N   &kp M  &kp COMMA   &kp DOT                          &kp FSLH  &kp RSHFT
- &ht_tp LEFT_CONTROL ESC  &kp LEFT_WIN  &ht_tp CAPS SCROLLLOCK  &kp LEFT  &kp RIGHT                                  &kp DEL   &kp BSPC       &kp END                      &kp PG_DN  &kp SPACE          &kp ENTER          &kp UP   &kp DOWN  &kp LBKT  &ht_tp KP_MULTIPLY RIGHT_BRACKET      &mo 2
+               &kp GRAVE        &kp N1                  &kp N2    &kp N3     &kp N4  &kp N5               &layer_parade                                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9                            &kp N0  &kp MINUS
+                 &kp TAB         &kp Q                   &kp W     &kp E      &kp R   &kp T                       &none                                                                             &kp EQUAL   &kp Y   &kp U      &kp I     &kp O                             &kp P   &kp BSLH
+                   &mo 2         &kp A                   &kp S     &kp D      &kp F   &kp G            &kp LEFT_BRACKET  &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_BRACKET   &kp H   &kp J      &kp K     &kp L                          &kp SEMI    &kp SQT
+               &kp LSHFT         &kp Z                   &kp X     &kp C      &kp V   &kp B                                             &kp HOME                      &kp PG_UP                                 &kp N   &kp M  &kp COMMA   &kp DOT                          &kp FSLH  &kp RSHFT
+ &ht_tp LEFT_CONTROL ESC  &kp LEFT_WIN  &ht_tp CAPS SCROLLLOCK  &kp LEFT  &kp RIGHT                             &kp DEL   &kp BSPC       &kp END                      &kp PG_DN  &kp SPACE          &kp ENTER          &kp UP   &kp DOWN  &kp LBKT  &ht_tp KP_MULTIPLY RIGHT_BRACKET      &mo 2
             >;
         };
 
         layer_long {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &tog 1                                                              &mo 3  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &long_press ENTER          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &tog 1                                                                             &mo 3  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                                 &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                    &long_press PAGE_UP                             &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &long_press PAGE_DOWN  &trans  &long_press ENTER          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -109,21 +109,21 @@
 
         layer_enterx2 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &double_tap ENTER          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &double_enter          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_enterx3 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &triple_tap ENTER          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &triple_enter          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
