@@ -1,12 +1,22 @@
 [
   {
-    "code": "&ht_bl",
-    "name": "Hold tap balanced",
-    "params": ["code","code"]
+    "code": "&long_press",
+    "name": "Long pressj",
+    "params": ["code"]
   },
   {
-    "code": "&td",
-    "name": "Tap dance",
-    "params": ["code","code","code"]
+    "code": "&triple_tap",
+    "name": "Triple Tap",
+    "params": ["code"]
+  },
+  {
+    "code": "&double_tap",
+    "name": "Double tap",
+    "params": ["code"]
+  },
+  {
+    "code": "&layer_parade",
+    "name": "Layer parade",
+    "params": ["layer","layer","layer","layer"]
   }
 ]
