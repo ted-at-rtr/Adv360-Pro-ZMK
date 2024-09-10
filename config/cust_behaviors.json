@@ -8,13 +8,6 @@
 		]
 	},
 	{
-		"code": "&long_press",
-		"name": "Long press",
-		"params": [
-			"code"
-		]
-	},
-	{
 		"code": "&triple_enter",
 		"name": "Triple enter",
 		"params": []
