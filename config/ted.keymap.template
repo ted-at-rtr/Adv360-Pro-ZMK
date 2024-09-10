@@ -28,14 +28,6 @@
         bindings = <&kp>, <&kp>;
     };
 
-    long_press: long_press {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&none>, <&kp>;
-    };
 
     layer_parade: layer_parade {
         compatible = "zmk,behavior-tap-dance";
