@@ -1,27 +1,41 @@
 [
-  {
-    "code": "&ht_tp",
-    "name": "Hold tap, tap preferred",
-    "params": ["code","code"]
-  },
-  {
-    "code": "&long_press",
-    "name": "Long pressj",
-    "params": ["code"]
-  },
-  {
-    "code": "&triple_tap",
-    "name": "Triple Tap",
-    "params": ["code"]
-  },
-  {
-    "code": "&double_tap",
-    "name": "Double tap",
-    "params": ["code"]
-  },
-  {
-    "code": "&layer_parade",
-    "name": "Layer parade",
-    "params": ["layer","layer","layer","layer"]
-  }
+	{
+		"code": "&ht_tp",
+		"name": "Hold tap, tap preferred",
+		"params": [
+			"code",
+			"code"
+		]
+	},
+	{
+		"code": "&long_press",
+		"name": "Long pressj",
+		"params": [
+			"code"
+		]
+	},
+	{
+		"code": "&triple_tap",
+		"name": "Triple Tap",
+		"params": [
+			"code"
+		]
+	},
+	{
+		"code": "&double_tap",
+		"name": "Double tap",
+		"params": [
+			"code"
+		]
+	},
+	{
+		"code": "&layer_parade",
+		"name": "Layer parade",
+		"params": [
+			"layer",
+			"layer",
+			"layer",
+			"layer"
+		]
+	}
 ]
