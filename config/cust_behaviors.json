@@ -9,33 +9,24 @@
 	},
 	{
 		"code": "&long_press",
-		"name": "Long pressj",
+		"name": "Long press",
 		"params": [
 			"code"
 		]
 	},
 	{
-		"code": "&triple_tap",
-		"name": "Triple Tap",
-		"params": [
-			"code"
-		]
+		"code": "&triple_enter",
+		"name": "Triple enter",
+		"params": []
 	},
 	{
-		"code": "&double_tap",
-		"name": "Double tap",
-		"params": [
-			"code"
-		]
+		"code": "&double_enter",
+		"name": "Double enter",
+		"params": []
 	},
 	{
 		"code": "&layer_parade",
 		"name": "Layer parade",
-		"params": [
-			"layer",
-			"layer",
-			"layer",
-			"layer"
-		]
+		"params": []
 	}
 ]
