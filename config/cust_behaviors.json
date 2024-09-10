@@ -1,5 +1,10 @@
 [
   {
+    "code": "&ht_tp",
+    "name": "Hold tap, tap preferred",
+    "params": ["code","code"]
+  },
+  {
     "code": "&long_press",
     "name": "Long pressj",
     "params": ["code"]
